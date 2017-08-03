@@ -1,10 +1,10 @@
 stage 'build_Project'
 node{
   if(isUnix()){
-  sh 'gradle build --info'
+  sh 'gradle build'
 
   }
   else{
-    bat 'gradle build --info'
+    bat 'gradle build'
   }
 }
